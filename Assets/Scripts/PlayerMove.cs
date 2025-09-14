@@ -6,7 +6,7 @@ public class PlayerMove : MonoBehaviour
 {
     // 필요한 변수 선언하기
     // [SerializeField] Rigidbody rigidbody; // private 변수로 선언하면서 인스펙터 창에서 값을 설정할 수 있도록 하는 속성 (오브젝트를 드래그해서 사용) 
-    private Rigidbody rigidbody; // Rigidbody 컴포넌트를 저장할 변수, 이동을 rigidbody로 처리하기 위해 필요
+    private new Rigidbody rigidbody; // Rigidbody 컴포넌트를 저장할 변수, 이동을 rigidbody로 처리하기 위해 필요
     public float speed = 10f; // 이동 속도 변수
     public float jumpHight = 10f; // 점프 높이 변수
     public float dash = 10f; // 대시를 얼마나 멀리 하는지 변수
