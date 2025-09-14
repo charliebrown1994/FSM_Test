@@ -271,6 +271,7 @@ GameObject:
   - component: {fileID: 330698957}
   - component: {fileID: 330698956}
   - component: {fileID: 330698955}
+  - component: {fileID: 330698958}
   m_Layer: 0
   m_Name: Character
   m_TagString: Untagged
@@ -287,7 +288,7 @@ Rigidbody:
   m_GameObject: {fileID: 330698954}
   serializedVersion: 4
   m_Mass: 1
-  m_Drag: 0
+  m_Drag: 10
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
@@ -324,10 +325,10 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5054809
-  m_Height: 2.0351357
+  m_Radius: 0.5
+  m_Height: 2
   m_Direction: 1
-  m_Center: {x: 0, y: 0.97794867, z: 0.0054808855}
+  m_Center: {x: 0, y: 1, z: 0}
 --- !u!4 &330698957
 Transform:
   m_ObjectHideFlags: 0
@@ -344,6 +345,25 @@ Transform:
   - {fileID: 570890951}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &330698958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 330698954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8726f099ead88894ca76ecb24475ec71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10
+  jumpHight: 10
+  dash: 30
+  rotSpeed: 10
+  layer:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!1 &410087039
 GameObject:
   m_ObjectHideFlags: 0
@@ -474,7 +494,7 @@ GameObject:
   - component: {fileID: 471682238}
   - component: {fileID: 471682237}
   - component: {fileID: 471682236}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
